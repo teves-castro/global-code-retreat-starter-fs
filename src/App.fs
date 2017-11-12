@@ -22,9 +22,6 @@ let drawSquare style (x,y) width =
 let rgb r g b : Fable.Core.U3<string,CanvasGradient,CanvasPattern> =
     !^ (sprintf "rgb(%d,%d,%d)" r g b)
 
-let rgba r g b a : Fable.Core.U3<string,CanvasGradient,CanvasPattern> =
-    !^ (sprintf "rgba(%d,%d,%d,%d)" r g b a)
-
 let drawBoard i =
     for y in 0 .. 80 do
     for x in 0 .. 80 do
